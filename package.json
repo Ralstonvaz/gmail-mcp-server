@@ -1,0 +1,40 @@
+{
+  "name": "gmail-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for Gmail IMAP/SMTP integration with scheduling support",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [
+    "mcp",
+    "gmail",
+    "email",
+    "imap",
+    "smtp",
+    "claude"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "node-imap": "^0.9.6",
+    "nodemailer": "^6.9.15",
+    "mailparser": "^3.6.5",
+    "node-cron": "^3.0.3",
+    "zod": "^3.23.8",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.12",
+    "@types/node-cron": "^3.0.11",
+    "@types/nodemailer": "^6.4.14",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.4"
+  }
+}
+
